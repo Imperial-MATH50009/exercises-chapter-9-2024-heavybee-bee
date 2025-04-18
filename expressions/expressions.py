@@ -30,7 +30,7 @@ class Expression:
         return Sub(other, self)
 
     def __mul__(self, other):
-        """"Mul: self * other."""
+        """Mul: self * other."""
         if isinstance(other, Num):
             other = Number(other)
         return Mul(self, other)
